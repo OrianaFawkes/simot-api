@@ -1,0 +1,13 @@
+
+{
+  "name": "Simot API",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Simot API",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "python -m pip install -r requirements.txt -r requirements-dev.txt"
+}
